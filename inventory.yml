@@ -1,0 +1,57 @@
+file:
+  path: /home/ubuntu/script1.sh
+  threshold: 0
+  unit: kb
+
+hook:
+  url: https://hook.com
+
+hosts:
+  US:
+    ELK_Master:
+      - host: 13.60.169.70
+        ssh_user: ubuntu
+        private_key_path: mern_k8s.pem
+    ELK_Nodes:
+      - host: 13.60.169.70
+        ssh_user: ubuntu
+        private_key_path: mern_k8s.pem
+      - host: 13.60.169.70
+        ssh_user: ubuntu
+        private_key_path: mern_k8s.pem
+
+  IN:
+    ELK_Master:
+      - host: 10.10.2.11
+        ssh_user: soc
+        private_key_path: /path/to/in_master.pem
+    ELK_Nodes:
+      - host: 10.10.2.12
+        ssh_user: soc
+        private_key_path: /path/to/in_node.pem
+
+  ZA:
+    ELK_Master:
+      - host: 10.10.2.11
+        ssh_user: ansible
+        private_key_path: /path/to/za_master.pem
+    ELK_Nodes:
+      - host: 10.10.2.12
+        ssh_user: ansible
+        private_key_path: /path/to/za_node1.pem
+      - host: 10.10.2.13
+        ssh_user: ansible
+        private_key_path: /path/to/za_node2.pem
+
+  AU:
+    ELK_Master:
+      - host: 10.10.2.11
+        ssh_user: ansible
+        private_key_path: /path/to/au_master.pem
+    ELK_Nodes:
+      - host: 10.10.2.12
+        ssh_user: ansible
+        private_key_path: /path/to/au_node1.pem
+      - host: 10.10.2.13
+        ssh_user: ansible
+        private_key_path: /path/to/au_node2.pem
