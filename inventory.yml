@@ -1,7 +1,7 @@
 file:
   path: /home/ubuntu/script1.sh
-  threshold: 0
-  unit: kb
+  threshold: 5
+  unit: gb
 
 hook:
   url: https://hook.com
