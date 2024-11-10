@@ -24,34 +24,34 @@ hosts:
     ELK_Master:
       - host: 10.10.2.11
         ssh_user: soc
-        private_key_path: /path/to/in_master.pem
+        private_key_path: in_master.pem
     ELK_Nodes:
       - host: 10.10.2.12
         ssh_user: soc
-        private_key_path: /path/to/in_node.pem
+        private_key_path: in_node.pem
 
   ZA:
     ELK_Master:
       - host: 10.10.2.11
         ssh_user: ansible
-        private_key_path: /path/to/za_master.pem
+        private_key_path: za_master.pem
     ELK_Nodes:
       - host: 10.10.2.12
         ssh_user: ansible
-        private_key_path: /path/to/za_node1.pem
+        private_key_path: za_node1.pem
       - host: 10.10.2.13
         ssh_user: ansible
-        private_key_path: /path/to/za_node2.pem
+        private_key_path: za_node2.pem
 
   AU:
     ELK_Master:
       - host: 10.10.2.11
         ssh_user: ansible
-        private_key_path: /path/to/au_master.pem
+        private_key_path: au_master.pem
     ELK_Nodes:
       - host: 10.10.2.12
         ssh_user: ansible
-        private_key_path: /path/to/au_node1.pem
+        private_key_path: au_node1.pem
       - host: 10.10.2.13
         ssh_user: ansible
-        private_key_path: /path/to/au_node2.pem
+        private_key_path: au_node2.pem
